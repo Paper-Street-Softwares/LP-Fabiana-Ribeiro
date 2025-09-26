@@ -53,7 +53,7 @@ export default function News({ colorMode }) {
               </h1>
             </div>
 
-            <div className="flex flex-col items-start gap-6 phone3:flex-row w-full p-4">
+            <div className="flex flex-col items-center justify-evenly desktop1:justify-start desktop1:items-start gap-6 phone3:flex-row w-full p-4">
               <Button
                 label="Artigo"
                 buttonLink="https://ojs.revistacontribuciones.com/ojs/index.php/clcs/article/view/19185"
