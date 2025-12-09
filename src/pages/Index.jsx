@@ -1,35 +1,35 @@
-import Faq from "../components/sections/Faq";
-import Hero from "../components/sections/Hero";
-import About from "../components/sections/About";
-import Steps from "../components/sections/Steps";
-import Features from "../components/sections/Features";
-import Navbar from "../components/sections/NavbarSocial";
-import FooterSocial from "../components/sections/FooterSocial";
-import AboutInstagram from "../components/sections/AboutInstagram";
-import BackToTopButton from "../components/interactives/BackToTopButton";
-import FloatingWhatsappButton from "../components/interactives/FloatingWhatsappButton";
-import Maps from "../components/sections/Maps";
-import BlogPosts from "../components/sections/BlogPosts";
-import CtaSecondary from "../components/sections/CtaSecondary";
-import { useTranslation } from "react-i18next";
-import "./../i18n";
-import Button from "../components/interactives/Button";
-import UnderConstruction from "../components/interactives/UnderConstruction";
-import { useColorMode } from "../assets/context/ColorModeContext";
-import News from "../components/sections/News";
+import Faq from '../components/sections/Faq'
+import Hero from '../components/sections/Hero'
+import About from '../components/sections/About'
+import Steps from '../components/sections/Steps'
+import Features from '../components/sections/Features'
+import Navbar from '../components/sections/NavbarSocial'
+import FooterSocial from '../components/sections/FooterSocial'
+import AboutInstagram from '../components/sections/AboutInstagram'
+import BackToTopButton from '../components/interactives/BackToTopButton'
+import FloatingWhatsappButton from '../components/interactives/FloatingWhatsappButton'
+import Maps from '../components/sections/Maps'
+import BlogPosts from '../components/sections/BlogPosts'
+import CtaSecondary from '../components/sections/CtaSecondary'
+import { useTranslation } from 'react-i18next'
+import './../i18n'
+import Button from '../components/interactives/Button'
+import UnderConstruction from '../components/interactives/UnderConstruction'
+import { useColorMode } from '../assets/context/ColorModeContext'
+import News from '../components/sections/News'
 
 export default function Index() {
-  const showUnderConstruction = false;
+  const showUnderConstruction = false
 
-  const { colorMode, setColorMode } = useColorMode();
-  const { t, i18n } = useTranslation();
+  const { colorMode, setColorMode } = useColorMode()
+  const { t, i18n } = useTranslation()
 
   const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
+    i18n.changeLanguage(lng)
+  }
 
   if (showUnderConstruction) {
-    return <UnderConstruction />;
+    return <UnderConstruction />
   }
 
   return (
@@ -77,7 +77,7 @@ export default function Index() {
 
       <About modal={false} showGallery={false} colorMode={colorMode} />
       <News />
-      {/* <AboutInstagram colorMode={colorMode} socialPrint={false} /> */}
+      <AboutInstagram colorMode={colorMode} socialPrint={true} />
       <CtaSecondary />
       <Steps colorMode={colorMode} />
       {/* <BlogPosts /> */}
@@ -87,5 +87,5 @@ export default function Index() {
       <FloatingWhatsappButton />
       <BackToTopButton />
     </>
-  );
+  )
 }
