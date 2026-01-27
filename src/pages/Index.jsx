@@ -56,36 +56,37 @@ export default function Index() {
 
       <Navbar colorMode={colorMode} />
 
-      <Hero
-        colorMode={colorMode}
-        appDownloadButtons={false}
-        defaultHero={false}
-        influencer={false}
-        panoramica={true}
-      />
-      {/* <CartaoSocio /> */}
-
-      <Features
-        colorMode={colorMode}
-        defaultFeature={false}
-        button={true}
-        modalWithCards={false}
-        paragraphs={false}
-        sixCards={false}
-        paragraphsModal={false}
-      />
-
-      <About modal={false} showGallery={false} colorMode={colorMode} />
-      <News />
-      <AboutInstagram colorMode={colorMode} socialPrint={true} />
-      <CtaSecondary />
-      <Steps colorMode={colorMode} />
-      {/* <BlogPosts /> */}
-      <Faq colorMode={colorMode} />
-      <Maps colorMode={colorMode} />
-      <FooterSocial colorMode={colorMode} addres={true} obs={false} />
-      <FloatingWhatsappButton />
-      <BackToTopButton />
+      <main>
+        {' '}
+        <Hero
+          colorMode={colorMode}
+          appDownloadButtons={false}
+          defaultHero={false}
+          influencer={false}
+          panoramica={true}
+        />
+        {/* <CartaoSocio /> */}
+        <Features
+          colorMode={colorMode}
+          defaultFeature={false}
+          button={true}
+          modalWithCards={false}
+          paragraphs={false}
+          sixCards={false}
+          paragraphsModal={false}
+        />
+        <About modal={false} showGallery={false} colorMode={colorMode} />
+        <News />
+        <AboutInstagram colorMode={colorMode} socialPrint={true} />
+        <CtaSecondary />
+        <Steps colorMode={colorMode} />
+        {/* <BlogPosts /> */}
+        <Faq colorMode={colorMode} />
+        <Maps colorMode={colorMode} />
+        <FooterSocial colorMode={colorMode} addres={true} obs={false} />
+        <FloatingWhatsappButton />
+        <BackToTopButton />
+      </main>
     </>
   )
 }
